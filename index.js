@@ -14,3 +14,13 @@ Createbtn.addEventListener ("click", ()=>{
     // notesContainer.appendChild(img);
 
 })
+// noteContainer.addEventListener("click" , function(e){
+//     if(e.target.tagName === "IMG"){
+//         e.target.paranetElement.remove();
+//     }
+// }) 
+noteContainer.addEventListener("click", function(e) {
+    if (e.target.tagName === "IMG") {
+        e.target.closest(".input-box").remove(); // Removes the entire note div
+    }
+});
