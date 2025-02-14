@@ -8,7 +8,7 @@ Createbtn.addEventListener ("click", ()=>{
     let img = document.createElement ("img") ;
     inputBox.className = "input-box";
     inputBox.setAttribute("contenteditable", "true");
-    img.src = "Recycle Bin Full3.ico" ;
+    img.src = "mynaui--trash-one-solid.png" ;
     noteContainer.appendChild(inputBox).appendChild(img);
     // notesContainer.appendChild(inputBox);
     // notesContainer.appendChild(img);

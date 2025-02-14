@@ -1,11 +1,29 @@
+.weui--pencil-outlined {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23cdc5ce' fill-rule='evenodd' d='M14 3v1.2H4.2v15.6h15.6V10H21v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm5.86-.254a.5.5 0 0 1 .706 0l.706.705a.5.5 0 0 1 0 .706l-9.51 9.51l-2.317 1.295a.3.3 0 0 1-.406-.41l1.312-2.296z'/%3E%3C/svg%3E");
+}
+
+.mynaui--trash-one-solid {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23cdc5ce' d='M10.238 3.974L9.98 5.75h4.037l-.256-1.776c-.048-.167-.17-.224-.243-.224H10.48c-.073 0-.195.057-.243.224m5.296 1.776H19.5a.75.75 0 0 1 0 1.5h-.769l-.873 10.185c-.053.62-.096 1.13-.165 1.542c-.07.429-.177.813-.386 1.169a3.25 3.25 0 0 1-1.401 1.287c-.372.177-.764.25-1.198.284c-.417.033-.928.033-1.55.033h-2.316c-.623 0-1.133 0-1.55-.033c-.434-.034-.826-.107-1.198-.284a3.25 3.25 0 0 1-1.401-1.287c-.21-.356-.315-.74-.386-1.169c-.069-.413-.112-.922-.165-1.542L5.269 7.25H4.5a.75.75 0 0 1 0-1.5h3.966l.293-2.029l.011-.061c.182-.79.86-1.41 1.71-1.41h3.04c.85 0 1.528.62 1.71 1.41l.011.061z'/%3E%3C/svg%3E");
+}
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins' , sans-serif;
     box-sizing: border-box;
 }
+
 body{
-    /* background-color: #571094; */
+    
     background: linear-gradient(135deg, #02024c, #310069, #e90076);
     height: 100vh;
     margin: 1vh;
@@ -14,12 +32,12 @@ body{
 .note{
     width: 100%;
     min-height: 100vh;
-    /* background:rgb(255, 183, 0) ; */
     color: #fff;
     padding-top: 4%;
     padding-left: 10%;
     
 }
+
 .note h1{
     display: flex;
     align-items: center;
@@ -27,6 +45,7 @@ body{
     font-weight: 600;
     margin-left: 40px;
 }
+
 .note h1 img{
     width: 50px;
     margin-right: 10px;
@@ -34,25 +53,30 @@ body{
     border: 0;
     border-radius: 10px;
 }
+
 .note button{
     display: flex;
     align-items: center;
-    background: linear-gradient( 135deg, #5c0e53 ,#dc0671);
+    background: rgba(81,0,107,255);
     margin-left:400px;
     color: rgb(196, 202, 202);
     font-size: 20px;
     outline: 0;
-    border: 0;
-    border-radius: 30px;
-    padding: 12px 22px;
-    margin: 30px 40px;
+    border: 0.5px solid;
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin: 25px 40px;
+    cursor: pointer;
+    box-shadow: inset 4px 4px 4px rgba(255, 255, 255, 0.2), 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
 }
-.note button img{
-    width: 40px;
-    margin-right: 8px;    
-    /* margin-left:400px; */
 
+.note button span{
+    color: #02024c;
+    width: 50px;
+    margin-right: 1px;    
 }
+
 .btn{
     margin-left:400px;
 }
@@ -60,6 +84,7 @@ body{
 .notecontainer{
     margin-left: 40px;
 }
+
 .input-box{
     position: relative;
     width: 500px;
@@ -72,6 +97,7 @@ body{
     outline: none;
     border-radius: 5px;   
 }
+
 .input-box img{
     width: 25px;
     position: absolute;
